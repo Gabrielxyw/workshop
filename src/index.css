@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  /* Aliases usados pelos novos componentes, mapeados para a paleta da logo WTwin */
+  --color-google-blue: #2f6fd0;
+  --color-google-red: #e57c0a;
+  --color-google-yellow: #f9a84d;
+  --color-google-green: #38b6e8;
+
+  /* Paleta extraída da logo WTwin */
+  --color-canvas: #f5f8fc;
+  --color-navy-50: #eef3fa;
+  --color-navy-100: #dde7f3;
+  --color-navy-200: #c4d4e8;
+  --color-navy-700: #1c3e6b;
+  --color-navy-800: #15325a;
+  --color-navy-900: #0e2440;
+  --color-navy-950: #081729;
+
+  --color-twinblue-400: #4f8fe0;
+  --color-twinblue-500: #2f6fd0;
+  --color-twinblue-600: #2459b0;
+
+  --color-cyan-bright: #38b6e8;
+  --color-cyan-soft: #79d0f2;
+
+  --color-ember-400: #f9a84d;
+  --color-ember-500: #f7931e;
+  --color-ember-600: #e57c0a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Fundo único e contínuo (flat) com malha técnica sutil — dá fluidez, sem quebras de bloco */
+body {
+  @apply text-navy-900 antialiased font-sans;
+  background-color: var(--color-canvas);
+  background-image:
+    linear-gradient(rgba(56, 182, 232, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 182, 232, 0.05) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
+
+/* Eyebrow técnico monoespaçado */
+.eyebrow {
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, #f7931e 0%, #4f8fe0 55%, #38b6e8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* bloco escuro flat (apenas no fechamento) */
+.bg-deep {
+  background-color: var(--color-navy-950);
+  background-image:
+    linear-gradient(rgba(56, 182, 232, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 182, 232, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+}
