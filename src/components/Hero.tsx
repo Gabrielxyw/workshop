@@ -36,7 +36,7 @@ export default function Hero() {
            className="flex items-center gap-3 px-5 py-2.5 border border-gray-200 bg-white/70 backdrop-blur-md rounded-full shadow-sm mb-12"
         >
            <Activity size={16} className="text-event-orange animate-pulse" />
-           <span className="text-xs md:text-sm font-mono tracking-widest uppercase text-event-navy font-bold">Parte do CBIE 2026 // Novembro</span>
+           <span className="text-xs md:text-sm font-mono tracking-widest uppercase text-event-navy font-bold"> CBIE 2026</span>
         </motion.div>
 
         {/* Massive WTwin Typography */}
