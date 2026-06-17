@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { GraduationCap } from 'lucide-react';
+import { Users, GraduationCap, Code2, Building2 } from 'lucide-react';
 
 export default function TargetAudience() {
   const audiences = [
@@ -7,8 +7,29 @@ export default function TargetAudience() {
       icon: GraduationCap,
       hoverClass: "group-hover:text-event-cyan",
       staticClass: "text-event-cyan",
-      title: "Público-alvo",
-      desc: "Esperamos fomentar a criação de uma Comunidade de prática focada em Gêmeos Digitais e Humanos Virtuais na Educação, reunindo academia (pesquisadores, educadores, estudantes), indústria e terceiro setor, bem como engenheiros de software, designers e arquitetos de sistemas."
+      title: "Academia e Pesquisa",
+      desc: "Investigadores, estudantes e professores focados em inovação pedagógica e avaliação na EdTech."
+    },
+    {
+      icon: Code2,
+      hoverClass: "group-hover:text-event-orange",
+      staticClass: "text-event-orange",
+      title: "Desenvolvedores & Tech",
+      desc: "Engenheiros de software, designers e arquitetos de sistemas."
+    },
+    {
+      icon: Building2,
+      hoverClass: "group-hover:text-event-blue",
+      staticClass: "text-event-blue",
+      title: "Indústria Corporativa",
+      desc: "Profissionais de T&D, Recursos Humanos e operações escalando a imersão na capacitação técnica."
+    },
+    {
+      icon: Users,
+      hoverClass: "group-hover:text-event-gold",
+      staticClass: "text-event-gold",
+      title: "Lentes Multidisciplinares",
+      desc: "Especialistas focados na psicologia da aprendizagem e sociólogos analisando impactos éticos."
     }
   ];
 
@@ -55,7 +76,7 @@ export default function TargetAudience() {
                transition={{ delay: 0.2 }}
                className="text-xl md:text-2xl text-gray-500 font-light leading-relaxed max-w-2xl"
              >
-               Acreditamos que os Gêmeos Digitais e os Humanos Virtuais na educação só entregam valor real quando aliamos rigor computacional a diretrizes humanas, éticas e pedagógicas duradouras. 
+               Acreditamos que os Gêmeos Digitais na educação só entregam valor real quando aliamos rigor computacional a diretrizes humanas, éticas e pedagógicas duradouras. 
              </motion.p>
         </div>
         

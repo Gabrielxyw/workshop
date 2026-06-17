@@ -5,6 +5,7 @@ import { Menu, X } from 'lucide-react';
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const submissionUrl = 'https://jems3.sbc.org.br/events/685';
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -36,7 +37,7 @@ export default function Header() {
           ))}
         </nav>
         
-        <a href="#chamada" className="hidden md:flex items-center gap-2 bg-gray-900 text-white px-6 py-2.5 rounded text-sm font-bold hover:bg-gray-800 transition-colors shadow-sm">
+        <a href={submissionUrl} target="_blank" rel="noreferrer" className="hidden md:flex items-center gap-2 bg-gray-900 text-white px-6 py-2.5 rounded text-sm font-bold hover:bg-gray-800 transition-colors shadow-sm">
           Submeter Artigo
         </a>
 
@@ -59,7 +60,7 @@ export default function Header() {
                     {link.name}
                   </a>
                 ))}
-                <a href="#chamada" onClick={() => setMobileMenuOpen(false)} className="text-center bg-gray-900 text-white px-6 py-3 rounded text-sm font-bold">
+                <a href={submissionUrl} target="_blank" rel="noreferrer" onClick={() => setMobileMenuOpen(false)} className="text-center bg-gray-900 text-white px-6 py-3 rounded text-sm font-bold">
                   Submeter Artigo
                 </a>
              </div>

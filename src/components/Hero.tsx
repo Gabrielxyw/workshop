@@ -2,6 +2,8 @@ import { motion } from 'motion/react';
 import { ArrowRight, ArrowLeftRight, Activity } from 'lucide-react';
 
 export default function Hero() {
+  const submissionUrl = 'https://jems3.sbc.org.br/events/685';
+
   return (
     <section
       className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden border-b border-gray-200 bg-white bg-cover bg-center bg-no-repeat"
@@ -80,7 +82,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
         >
-          <a href="#chamada" className="w-full sm:w-auto px-8 py-4 md:py-5 rounded-full bg-event-navy text-white font-bold hover:bg-event-blue shadow-lg shadow-event-navy/20 transition-all flex items-center justify-center gap-2 group text-lg border border-event-navy">
+          <a href={submissionUrl} target="_blank" rel="noreferrer" className="w-full sm:w-auto px-8 py-4 md:py-5 rounded-full bg-event-navy text-white font-bold hover:bg-event-blue shadow-lg shadow-event-navy/20 transition-all flex items-center justify-center gap-2 group text-lg border border-event-navy">
             Submeter Trabalho
             <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
           </a>
