@@ -11,7 +11,7 @@ export default function Schedule() {
       badge: "bg-event-cyan",
       glow: "bg-event-cyan/20",
       pill: "border-event-cyan/30 bg-event-cyan/10 text-event-blue",
-      desc: "Nivelamento do estado-da-arte em Gêmeos Digitais e Humanos Virtuais. Conceitos técnicos e filosóficos seguidos de discussões abertas."
+      desc: "Nivelamento do estado-da-arte em Gêmeos Digitais e Humanos Virtuais e suas aplicações em Educação. Apresentação de conceitos científicos, técnicos e filosóficos, seguida de discussões abertas."
     },
     {
       id: "02",
@@ -22,7 +22,7 @@ export default function Schedule() {
       badge: "bg-event-orange",
       glow: "bg-event-orange/20",
       pill: "border-event-orange/30 bg-event-orange/10 text-event-orange",
-      desc: "Apresentação de 6 a 8 trabalhos técnicos (curtos e longos), relatos de experiência e propostas inovadoras originadas da comunidade."
+      desc: "Apresentação de trabalhos científicos, técnicos, relatos de experiência e propostas inovadoras originadas da comunidade. Os trabalhos seguem o padrão do CBIE, podendo ser curtos ou longos, em português, espanhol ou inglês, enviados pelo JEMS3 e publicados na SOL-SBC."
     },
     {
       id: "03",
@@ -33,7 +33,7 @@ export default function Schedule() {
       badge: "bg-event-gold",
       glow: "bg-event-gold/20",
       pill: "border-event-gold/40 bg-event-gold/10 text-event-navy",
-      desc: "Construção de manifesto coletivo através de role-based writing, parágrafos rotativos e técnica 1-2-4-Todos. Uma dinâmica viva e descentralizada."
+      desc: "Construção de manifesto coletivo através de role-based writing, parágrafos rotativos e técnica 1-2-4-Todos. Uma dinâmica viva e descentralizada. A produção coletiva resultante desta dinâmica será também publicada na SOL-SBC."
     }
   ];
 

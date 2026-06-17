@@ -9,7 +9,7 @@ export default function About() {
       border: "border-google-blue/30",
       bg: "bg-google-blue/10",
       glow: "from-google-blue/20",
-      desc: "Integração de IoT e Inteligência Artificial para espelhamento de sistemas reais. Análise preditiva em ambientes de aprendizagem híbridos antes de falhas no mundo físico."
+      desc: "Integração de IoT, IA e XR para a modelagem dinâmica de ecossistemas educacionais e de treinamento híbridos. Possibilitam simulação e análise preditiva, antecipando lacunas e otimizando a experiência de aprendizagem."
     },
     {
       title: "Humanos Virtuais",
@@ -18,7 +18,7 @@ export default function About() {
       border: "border-google-yellow/30",
       bg: "bg-google-yellow/10",
       glow: "from-google-yellow/20",
-      desc: "Agentes conversacionais potencializados por IA multimodal. Presença social que procura mimetizar comportamento humano para engajamento e personalização em escala."
+      desc: "Agentes conversacionais inteligentes e multimodais projetados para atuar como mediadores da aprendizagem. Ao mimetizar a interação humana, promovem presença social e engajamento, potencializando a personalização do ensino."
     },
     {
       title: "Desafios Éticos",
@@ -27,7 +27,7 @@ export default function About() {
       border: "border-google-red/30",
       bg: "bg-google-red/10",
       glow: "from-google-red/20",
-      desc: "Enfrentando dilemas como transparência de dados, manipulação emocional, viés algorítmico e exclusão cultural na adoção destas complexas arquiteturas tecnológicas."
+      desc: "Serão discutidos dilemas como transparência de dados, manipulação emocional, viés algorítmico e exclusão cultural na adoção destas complexas arquiteturas tecnológicas."
     }
   ];
 

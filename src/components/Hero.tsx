@@ -67,10 +67,10 @@ export default function Hero() {
           className="max-w-3xl mb-12 relative z-20"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 leading-tight mb-6">
-            Workshop de <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-orange to-event-gold whitespace-nowrap">Gêmeos Digitais</span> e <br className="hidden md:block" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-cyan to-event-blue whitespace-nowrap">Humanos Virtuais</span>
+            Workshop de <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-orange to-event-gold whitespace-nowrap">Gêmeos Digitais</span> e <br className="hidden md:block" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-cyan to-event-blue whitespace-nowrap">Humanos Virtuais</span> <br className="hidden md:block" /> na Educação e Treinamento
           </h2>
           <p className="text-xl md:text-2xl text-gray-600 font-medium">
-            Convergência entre simulações imersivas e presença social iterativa em ambientes de educação e treinamento.
+            Convergência entre simulações imersivas e presença social interativa em ambientes de educação e treinamento
           </p>
         </motion.div>
 

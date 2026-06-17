@@ -67,15 +67,6 @@ export default function Organizers() {
           >
             Comitê Organizador
           </motion.h2>
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl text-gray-500 font-light leading-relaxed max-w-2xl"
-          >
-            Pesquisadores, professores e líderes acadêmicos na vanguarda da intersecção entre tecnologia avançada e educação.
-          </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 lg:gap-x-16 gap-y-20 lg:gap-y-28">
