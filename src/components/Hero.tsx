@@ -6,7 +6,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden border-b border-gray-200 bg-white bg-cover bg-center bg-no-repeat"
+      className="relative flex h-[100svh] items-center justify-center overflow-hidden border-b border-gray-200 bg-white bg-cover bg-center bg-no-repeat px-0 pt-20 pb-6"
       style={{ backgroundImage: "url('/fundo.png')" }}
     >
 
@@ -29,16 +29,19 @@ export default function Hero() {
          />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 flex flex-col items-center justify-center text-center max-w-5xl mt-12">
+      <div className="container mx-auto px-6 relative z-10 flex h-full max-w-5xl flex-col items-center justify-center text-center">
         
         <motion.div
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 0.5 }}
-           className="flex items-center gap-3 px-5 py-2.5 border border-gray-200 bg-white/70 backdrop-blur-md rounded-full shadow-sm mb-12"
+           className="group relative mb-6 flex items-center gap-3 overflow-hidden rounded-full border border-event-cyan/30 bg-white/80 px-5 py-2.5 shadow-lg shadow-event-blue/10 backdrop-blur-md"
         >
-           <Activity size={16} className="text-event-orange animate-pulse" />
-           <span className="text-xs md:text-sm font-mono tracking-widest uppercase text-event-navy font-bold"> CBIE 2026</span>
+           <div className="absolute inset-0 bg-gradient-to-r from-event-cyan/15 via-event-gold/15 to-event-orange/15 opacity-90"></div>
+           <Activity size={16} className="relative z-10 text-event-orange animate-pulse" />
+           <span className="relative z-10 bg-gradient-to-r from-event-blue via-event-cyan to-event-orange bg-clip-text text-xs md:text-sm font-mono tracking-widest uppercase text-transparent font-bold">
+             CBIE 2026
+           </span>
         </motion.div>
 
         {/* Massive WTwin Typography */}
@@ -46,9 +49,9 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="relative mb-10 w-full"
+          className="relative mb-6 w-full"
         >
-          <h1 className="font-display font-black text-[5.5rem] sm:text-[8rem] md:text-[11rem] lg:text-[14rem] leading-[0.8] tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-event-navy to-[#183457] drop-shadow-sm">
+          <h1 className="font-display font-black text-[clamp(4.5rem,15vw,11rem)] leading-[0.8] tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-event-navy to-[#183457] drop-shadow-sm">
             WTwin
           </h1>
           
@@ -66,14 +69,32 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="max-w-3xl mb-12 relative z-20"
+          className="max-w-3xl mb-7 relative z-20"
         >
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-gray-900 leading-tight mb-6">
+          <h2 className="text-2xl md:text-4xl lg:text-[2.75rem] font-display font-bold text-gray-900 leading-tight mb-4">
             Workshop de <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-orange to-event-gold whitespace-nowrap">Gêmeos Digitais</span> e <br className="hidden md:block" /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-event-cyan to-event-blue whitespace-nowrap">Humanos Virtuais</span> <br className="hidden md:block" /> na Educação e Treinamento
           </h2>
-          <p className="text-xl md:text-2xl text-gray-600 font-medium">
+          <p className="text-lg md:text-xl text-gray-600 font-medium">
             Convergência entre simulações imersivas e presença social interativa em ambientes de educação e treinamento
           </p>
+          <div className="mt-6 flex flex-col items-center justify-center gap-2 font-mono uppercase tracking-widest text-event-navy">
+            <p className="text-sm md:text-base font-bold">
+              WTwin em{' '}
+              <span className="font-display text-2xl md:text-3xl normal-case tracking-tight text-event-cyan">5/10</span>{' '}
+              no{' '}
+              <span className="bg-gradient-to-r from-event-blue via-event-cyan to-event-orange bg-clip-text font-display text-xl md:text-2xl normal-case tracking-tight text-transparent">
+                CBIE 2026
+              </span>
+            </p>
+
+            <div className="h-px w-24 bg-gradient-to-r from-transparent via-event-orange to-transparent"></div>
+            <p className="text-sm md:text-base font-bold">
+              Submissões até{' '}
+              <span className="text-gray-400 line-through">1/7</span>{' '}
+              <span className="font-display text-2xl md:text-3xl tracking-tight text-event-orange">15/7</span>
+            </p>
+
+          </div>
         </motion.div>
 
         <motion.div
