@@ -91,7 +91,8 @@ export default function Hero() {
             <p className="text-sm md:text-base font-bold">
               Submissões até{' '}
               <span className="text-gray-400 line-through">1/7</span>{' '}
-              <span className="font-display text-2xl md:text-3xl tracking-tight text-event-orange">15/7</span>
+              <span className="text-gray-400 line-through">15/7</span>{' '}
+              <span className="font-display text-2xl md:text-3xl tracking-tight text-event-orange">20/7</span>
             </p>
 
           </div>
